@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(211, 227, 241);
+}
+
+.topnav {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+
+  padding: 0px 12px;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.topnav a {
+
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bolder;
+
+}
+
+.mid {
+
+  display: inline-block;
+
+
+}
+
+
+.topnav a:hover {
+
+  background-color: rgb(255, 0, 13);
+  color: black;
+  transition: 1s;
+  opacity: 1;
+  transform: scale(1.2);
+
+
+}
+
+.topnav a.active {
+
+  color: rgb(255, 0, 0);
+}
+
+.topnav a.active:hover {
+
+  color: rgb(0, 0, 0);
+}
+
+.scale-img {
+
+
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered-txt {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 2px 10%;
+
+}
+
+.title {
+  text-align: center;
+
+  padding: 10px 0px;
+
+}
+
+.img-left {
+  float: left;
+  width: 50%;
+  height: auto;
+
+}
+
+.img-right {
+  float: right;
+  width: 50%;
+  height: auto;
+
+}
