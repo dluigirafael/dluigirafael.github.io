@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="/src/Ubuntu-Regular.ttf">
+    
+    <meta http-equiv="refresh" content="0;url=https://dluigirafael.github.io/Index.html" />
     <title>Tesla</title>
 
 </head>
