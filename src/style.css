@@ -2,25 +2,43 @@ body {
   background-color: rgb(211, 227, 241);
 }
 
-.topnav {
+.topnav{
   background-color: rgb(0, 0, 0);
-  overflow: hidden;
+  overflow: auto;
+  overflow-y: hidden;
 
   padding: 0px 12px;
   text-align: center;
   border-radius: 100px;
+  white-space: nowrap;
+  scrollbar-color: red black;
+  
+  
+}
+.topnav::-webkit-scrollbar {
+  width: 10px;
+}
+.topnav::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+.topnav::-webkit-scrollbar-thumb {
+  background: rgb(248, 0, 0);
+  border-radius: 20px; 
 }
 
-.topnav a {
+  
 
-  float: left;
+.topnav a {
+  display: inline-block;
   color: #f2f2f2;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bolder;
-
+  
+  
 }
 
 .mid {
