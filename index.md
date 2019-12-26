@@ -7,11 +7,17 @@
    
 
 </head>
+<style>
+    button{
+    margin: 0 auto; width: 144px; 
+    }
+    
+    </style>
 
 <body>
 
   
-            <a  href="Index.html">Tesla</a>
+         <button>   <a  href="Index.html">Tesla</a></button>
             
 
    
