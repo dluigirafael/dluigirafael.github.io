@@ -12,6 +12,7 @@
       margin: 0 auto;
     display: block;
     border-radius:100px;
+    width:300px;
     }
     
 </style>
