@@ -148,10 +148,7 @@ body:before {
 }
 .text p {
  
-  
-  background: rgba(182, 242, 247, 0.603)
-}
-.text h2 {
-  
-  background-color: rgba(182, 242, 247, 0.603)
+
+  background: rgba(182, 242, 247, 0.603);
+  display: inline-block;
 }
