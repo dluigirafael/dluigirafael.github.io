@@ -12,7 +12,7 @@
     margin: 0 auto; width: 144px; 
     }
     
-    </style>
+</style>
 
 <body>
 
