@@ -9,7 +9,7 @@
 </head>
 <style>
     button{
-    margin: 0 auto; width: 144px; 
+     text-align:center;
     border-radius:100px;
     }
     
