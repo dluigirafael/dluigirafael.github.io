@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    background-image: url("./img/warty-final-ubuntu.png");
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#top-bar {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    width: 100vw;
+    height: 3%;
+    min-height: 30px;
+    user-select: none;
+    color: white;
+}
+
+#activities {
+    display: inline-block;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    
+    
+}
+#clock{
+    position: absolute;
+    display: inline-block;
+    left: 48%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+   
+}
+
+#status{
+    position: absolute;
+    display: inline-block;
+    padding:0 15px;
+    padding-bottom: 5px;
+    margin-top: 4px;
+    right: 0px;
+}
+.item{
+    padding: 0 3px;
+    width: 16px;
+    filter: brightness(100);
+}
