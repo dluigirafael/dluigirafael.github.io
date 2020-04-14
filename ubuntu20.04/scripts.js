@@ -7,17 +7,27 @@ function border(id) {
     }
 }
 
- function clock() {
+function clock() {
 
     let today = new Date();
     let date = today.getDate();
-    let months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+    let months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
     let month = months[today.getMonth()]
     let hour = today.getHours();
-    let minute= today.getMinutes();
-    if (minute < 10) {minute = "0" + i};
+    let minute = today.getMinutes();
+    if (minute < 10) {
+        minute = "0" + minute
+    };
 
     document.getElementById('clock').innerHTML = ` ${month} ${date}&nbsp;&nbsp; ${hour}:${minute}`;
     setTimeout(clock, 30000);
 
+}
+
+function show(id) {
+    if (document.getElementById(id).style.display === "") {
+        document.getElementById(id).style.display = "block";
+    } else {
+        document.getElementById(id).style.display = "";
+    }
 }
