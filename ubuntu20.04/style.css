@@ -35,7 +35,7 @@ body {
 #clock{
     position: absolute;
     display: inline-block;
-    left: 48%;
+    left: 47%;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px;
@@ -46,7 +46,7 @@ body {
 #status{
     position: absolute;
     display: inline-block;
-    padding:0 15px;
+    padding:0 10px;
     padding-bottom: 5px;
     margin-top: 4px;
     right: 0px;
