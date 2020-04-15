@@ -13,7 +13,7 @@
 </head>
 
 <body onload="clock()">
-    <div id="top-bar" >
+    <div id="top-bar">
         <span id="activities" onclick="border('activities')"> Activities
         </span>
 
@@ -51,16 +51,27 @@
                 <div id="day"></div>
                 <div id="month"></div>
             </div>
-            <div id="calendar"></div>
+            <div id="calendar">
+                * calendar *
+            </div>
         </div>
     </div>
 
     <div id="arrow2"></div>
     <div id="powerOptions">
-        <div id="volume"> 
-            <img src="./img/audio-speakers-symbolic.svg" alt="volume" id="volumeIcon">
-            <input type="range" id="volumeSlider">
+        <div class="sliders">
+            <img src="./img/audio-speakers-symbolic.svg" alt="volume" class="icon">
+            <input type="range" class="Slider">
         </div>
+        <div class="sliders">
+            <img src="./img/brightness-symbolic.svg" alt="brightness" class="icon">
+            <input type="range" class="Slider">
+        </div>
+
+        <div class="line "></div>
+        <div id="network" onclick="expand()"> </div>
+        <div id="networkSettings"> </div>
+        <div class="line "></div>
     </div>
 </body>
 
