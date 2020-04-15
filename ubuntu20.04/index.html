@@ -17,7 +17,10 @@
         <span id="activities" onclick="border('activities')"> Activities
         </span>
 
-        <span id="clock" onclick="border('clock');show('arrow');show('notifications')"> Yeeet</span>
+        <span id="clock" onclick="border('clock');show('arrow','block');show('notifications','block')"> 
+            <span id ="time"></span>
+            <img src="./img/dnd.svg" alt="dnd" id="dnd">
+        </span>
 
         <span id="status" onclick="border('status')">
             <img class="item" src="./img/network-wired-symbolic.svg" alt="">
@@ -26,12 +29,20 @@
             <img class="item" src="./img/arrow-symbolic.svg" alt="">
         </span>
     </div>
-    <div id="arrow" ></div>
+    <div id="arrow"></div>
     <div id="notifications">
         <div id="left">
             <img src="./img/notifications-symbolic.svg" alt="" id="bell">
             <br>
             No Notifications
+            <br>
+            <div id="button"> Do Not Disturb
+                <label class="switch">
+                    <input type="checkbox" onclick="show('dnd','inline')"  autocomplete="off">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
         </div>
         <div id="bar"></div>
     </div>
