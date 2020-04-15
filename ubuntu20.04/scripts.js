@@ -1,7 +1,7 @@
 function border(id) {
 
     if (document.getElementById(id).style.borderBottom === "") {
-        document.getElementById(id).style.borderBottom = "solid aqua 2px"
+        document.getElementById(id).style.borderBottom = "solid #FF4623 2.5px"
     } else {
         document.getElementById(id).style.borderBottom = "";
     }
@@ -19,14 +19,15 @@ function clock() {
         minute = "0" + minute
     };
 
-    document.getElementById('clock').innerHTML = ` ${month} ${date}&nbsp;&nbsp; ${hour}:${minute}`;
+    document.getElementById('time').innerHTML = ` ${month} ${date}&nbsp;&nbsp; ${hour}:${minute}`;
     setTimeout(clock, 30000);
 
 }
 
-function show(id) {
+function show(id , display) {
     if (document.getElementById(id).style.display === "") {
-        document.getElementById(id).style.display = "block";
+        document.getElementById(id).style.display = display;
+        setTimeout(()=>{id.style.opacity = 1;id.style.transform = 'scale(1)';},0)
     } else {
         document.getElementById(id).style.display = "";
     }
