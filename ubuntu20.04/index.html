@@ -23,7 +23,7 @@
         </span>
 
         <span id="status" onclick="border('status');show('arrow2','block');show('powerOptions','block')">
-            <img class="item" src="./img/network-wired-symbolic.svg" alt="">
+            <img class="item offline" src="./img/network-wired-symbolic.svg" alt="" >
             <img class="item" src="./img/audio-speakers-symbolic.svg" alt="">
             <img class="item" src="./img/system-shutdown-symbolic.svg" alt="">
             <img class="item" src="./img/arrow-symbolic.svg" alt="">
@@ -60,7 +60,7 @@
     <div id="arrow2"></div>
     <div id="powerOptions">
         <div class="sliders">
-            <img src="./img/audio-speakers-symbolic.svg" alt="volume" class="icon">
+            <img src="./img/audio-speakers-symbolic.svg" alt="volume" class="icon ">
             <input type="range" class="Slider">
         </div>
         <div class="sliders">
@@ -69,8 +69,15 @@
         </div>
 
         <div class="line "></div>
-        <div id="network" onclick="expand()"> </div>
-        <div id="networkSettings"> </div>
+        <div id="network" onclick="expand();arrowRotate() ">
+            <img src="./img/network-wired-symbolic.svg" alt="network"  class="icon offline">
+            <span id="networkText"> Wired Connected</span>
+            <div id="networkArrow"></div>
+        </div>
+        <div id="networkSettings"> 
+            <div class="wiredText" onclick="offline()" >Turn Off</div>
+            <div class="wiredText">Wired Settings</div>
+        </div>
         <div class="line "></div>
     </div>
 </body>
