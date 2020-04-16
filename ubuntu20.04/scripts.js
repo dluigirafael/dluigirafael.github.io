@@ -64,10 +64,43 @@ function expand() {
     if (document.getElementById("powerOptions").style.height == "30%") {
         document.getElementById("powerOptions").style.height = "";
         document.getElementById("networkSettings").style.display = "";
-    }
-    else{
+    } else {
         document.getElementById("powerOptions").style.height = "30%";
         document.getElementById("networkSettings").style.display = "block";
-       
+
     }
+}
+
+
+
+function arrowRotate() {
+    let arrow = document.getElementById("networkArrow");
+    let status = window.getComputedStyle(document.getElementById("networkSettings")).getPropertyValue('display')
+
+    if (status == "block") {
+        arrow.style.borderColor = "#ffffff transparent transparent transparent";
+        arrow.style.borderWidth = " 8.7px 5px 0 5px";
+
+    } else {
+        arrow.style.borderWidth = "5px 0 5px 8.7px";
+        arrow.style.borderColor = "transparent transparent transparent #ffffff";
+    }
+
+}
+
+function offline() {
+    let target = document.getElementsByClassName("offline");
+    let status = target[0].src;
+
+
+    if (status.includes("wired")) {
+        target[0].src = "./img/network-offline-symbolic.svg";
+        target[1].src = "./img/network-offline-symbolic.svg";
+       
+    } else {
+       
+        target[0].src = "./img/network-wired-symbolic.svg";
+        target[1].src = "./img/network-wired-symbolic.svg";
+    }
+
 }
