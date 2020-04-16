@@ -232,7 +232,8 @@ input:checked+.slider:before {
 
 #calendar {
     color: white;
-    padding-top: 50%; /*remove padding if you delete  the * calendar * text */
+    padding-top: 50%;
+    /*remove padding if you delete  the * calendar * text */
     text-align: center;
     border: 2px solid green;
     height: 70%;
@@ -256,6 +257,7 @@ input[type="range"]::-moz-range-thumb {
     height: 15px;
     /*thumbHeight*/
     border-radius: 50%;
+    border: 1px solid black;
 }
 
 input[type="range"]::-moz-range-progress {
@@ -276,9 +278,9 @@ input[type="range"]::-moz-focus-outer {
 /* end */
 
 .sliders {
-    padding-top: 7%;
+    padding-top: 6%;
     padding-left: 4%;
-   
+
 }
 
 .icon {
@@ -292,26 +294,52 @@ input[type="range"]::-moz-focus-outer {
     width: 85%;
 }
 
-.line{
+.line {
     background-color: rgba(0, 0, 0, 0.459);
     margin: 0 auto;
     margin-top: 7px;
     height: 1px;
     width: 40%;
-
-    
 }
 
-#network{
+#network {
+    padding-top: 4%;
+    padding-left: 4%;
+    color: white;
     margin-top: 5px;
-    border:2px solid red;
-    height:3.5vh;
-    
+    border: 2px solid red;
+    height: 3vh;
 }
-#networkSettings{
+
+#networkText {
+    position: absolute;
+}
+
+#networkArrow {
+    position: relative;
+    bottom: 50%;
+    left: 90%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 8.7px;
+    border-color: transparent transparent transparent #ffffff;
+}
+
+#networkSettings {
     display: none;
-    border-top:1px solid rgba(0, 0, 0, 0.459);
-    border-bottom:1px solid rgba(0, 0, 0, 0.459);
-    height:22%;
+    border-top: 1px solid rgba(0, 0, 0, 0.459);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+    height: 21%;
     background-color: rgb(51, 50, 50);
+}
+
+.wiredText {
+    color: white;
+    padding: 2% 12%;
+
+}
+
+.wiredText:hover {
+    background-color: rgb(81, 81, 81);
 }
