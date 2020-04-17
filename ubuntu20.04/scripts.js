@@ -64,18 +64,37 @@ function expand() {
     if (document.getElementById("powerOptions").style.height == "30%") {
         document.getElementById("powerOptions").style.height = "";
         document.getElementById("networkSettings").style.display = "";
+        
     } else {
         document.getElementById("powerOptions").style.height = "30%";
         document.getElementById("networkSettings").style.display = "block";
-
+        document.getElementById("powerSettings").style.display = "";
+        
+        
     }
+}
+
+function expandPower(){
+    if (document.getElementById("powerSettings").style.display == ""){
+
+        document.getElementById("powerSettings").style.display = "block";
+        document.getElementById("powerOptions").style.height = "";
+        document.getElementById("networkSettings").style.display = "";
+        
+        
+    }
+    else{
+        document.getElementById("powerSettings").style.display = "";
+    }
+
+        
 }
 
 
 
-function arrowRotate() {
-    let arrow = document.getElementById("networkArrow");
-    let status = window.getComputedStyle(document.getElementById("networkSettings")).getPropertyValue('display')
+function arrowRotate(id,moving) {
+    let arrow = document.getElementById(id);
+    let status = window.getComputedStyle(document.getElementById(moving)).getPropertyValue('display')
 
     if (status == "block") {
         arrow.style.borderColor = "#ffffff transparent transparent transparent";
@@ -85,6 +104,7 @@ function arrowRotate() {
         arrow.style.borderWidth = "5px 0 5px 8.7px";
         arrow.style.borderColor = "transparent transparent transparent #ffffff";
     }
+  
 
 }
 
@@ -96,11 +116,13 @@ function offline() {
     if (status.includes("wired")) {
         target[0].src = "./img/network-offline-symbolic.svg";
         target[1].src = "./img/network-offline-symbolic.svg";
+        document.getElementById("networkText").innerHTML =" Wired Off"
        
     } else {
        
         target[0].src = "./img/network-wired-symbolic.svg";
         target[1].src = "./img/network-wired-symbolic.svg";
+        document.getElementById("networkText").innerHTML =" Wired Connected"
     }
 
 }
