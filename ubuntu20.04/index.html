@@ -23,7 +23,7 @@
         </span>
 
         <span id="status" onclick="border('status');show('arrow2','block');show('powerOptions','block')">
-            <img class="item offline" src="./img/network-wired-symbolic.svg" alt="" >
+            <img class="item offline" src="./img/network-wired-symbolic.svg" alt="">
             <img class="item" src="./img/audio-speakers-symbolic.svg" alt="">
             <img class="item" src="./img/system-shutdown-symbolic.svg" alt="">
             <img class="item" src="./img/arrow-symbolic.svg" alt="">
@@ -61,24 +61,45 @@
     <div id="powerOptions">
         <div class="sliders">
             <img src="./img/audio-speakers-symbolic.svg" alt="volume" class="icon ">
-            <input type="range" class="Slider">
+            <input type="range" class="Slider" max="50" value="50">
         </div>
         <div class="sliders">
             <img src="./img/brightness-symbolic.svg" alt="brightness" class="icon">
-            <input type="range" class="Slider">
+            <input type="range" class="Slider" max="50" value="50">
         </div>
 
         <div class="line "></div>
-        <div id="network" onclick="expand();arrowRotate() ">
-            <img src="./img/network-wired-symbolic.svg" alt="network"  class="icon offline">
+        <div id="network"
+            onclick="expand();arrowRotate('networkArrow','networkSettings');arrowRotate('powerArrow','powerSettings'); ">
+            <img src="./img/network-wired-symbolic.svg" alt="network" class="icon offline">
             <span id="networkText"> Wired Connected</span>
             <div id="networkArrow"></div>
         </div>
-        <div id="networkSettings"> 
-            <div class="wiredText" onclick="offline()" >Turn Off</div>
+        <div id="networkSettings">
+            <div class="wiredText" onclick="offline()">Turn Off</div>
             <div class="wiredText">Wired Settings</div>
         </div>
         <div class="line "></div>
+        <div class="powerAlign">
+            <img src="./img/settings-symbolic.svg" alt="" class="icon">
+            <span class="powerText">Settings</span>
+        </div>
+        <div class="powerAlign">
+            <img src="./img/lock-symbolic.svg" alt="" class="icon">
+            <span class="powerText">Lock</span>
+        </div>
+        <div class="powerAlign"
+            onclick="expandPower(); arrowRotate('powerArrow','powerSettings');arrowRotate('networkArrow','networkSettings')">
+            <img src="./img/system-shutdown-symbolic.svg" alt="" class="icon">
+            <span class="powerText">Power Off / Log Out</span>
+            <div id="powerArrow"></div>
+        </div>
+        <div id="powerSettings">
+            <div class="powerAlign hoverPower powerAlignFix">Log Out</div>
+            <div class="line "style="background-color:rgb(194, 187, 187)"></div>
+            <div class="powerAlign hoverPower powerAlignFix">Suspend</div>
+            <div class="powerAlign hoverPower powerAlignFix">Power Off...</div>
+        </div>
     </div>
 </body>
 
