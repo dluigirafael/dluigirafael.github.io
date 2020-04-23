@@ -61,7 +61,7 @@ button::-moz-focus-inner {
   position: relative;
   justify-content: center;
   margin: 0 auto;
-  height: 50vh;
+  height: 60vh;
   width: auto;
   padding-top: 1%;
   transition: ease-in ;
