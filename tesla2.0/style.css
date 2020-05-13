@@ -96,6 +96,7 @@ button::-moz-focus-inner {
   padding: 2% 5%;
   margin: 5% 2%;
   border-radius: 10px;
+  text-align:justify;
 }
 
 .title {
